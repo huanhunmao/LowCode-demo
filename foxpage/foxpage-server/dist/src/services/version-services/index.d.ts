@@ -1,0 +1,15 @@
+import { VersionCheckService } from './version-check-service';
+import { VersionComponentService } from './version-component-service';
+import { VersionInfoService } from './version-info-service';
+import { VersionListService } from './version-list-service';
+import { VersionLiveService } from './version-live-service';
+import { VersionNumberService } from './version-number-service';
+import { VersionRelationService } from './version-relation-service';
+declare const info: VersionInfoService;
+declare const check: VersionCheckService;
+declare const number: VersionNumberService;
+declare const live: VersionLiveService;
+declare const relation: VersionRelationService;
+declare const component: VersionComponentService;
+declare const list: VersionListService;
+export { check, component, info, list, live, number, relation };

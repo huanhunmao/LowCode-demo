@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig",
+  "include": ["./jest.config.ts", "src/**/*", "./eslintrc.js"],
+  "exclude": ["test/**/*"]
+}

@@ -1,0 +1,115 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.METHOD = exports.LOGGER_LEVEL = exports.RESPONSE_LEVEL = exports.CONT_STORE = exports.TAG = exports.DELIVERY_REFERENCE = exports.DELIVERY_CLONE = exports.DSL_VERSION = exports.VERSION = exports.LOG = exports.TYPE = exports.PRE = void 0;
+exports.PRE = {
+    APP: 'appl',
+    AUTH: 'auth',
+    CONTENT: 'cont',
+    CONTENT_VERSION: 'cver',
+    FILE: 'file',
+    FOLDER: 'fold',
+    LOG: 'logs',
+    ORDER: 'oder',
+    ORGANIZATION: 'orga',
+    REGISTER: 'regi',
+    RELATION: 'rela',
+    RESOURCE: 'rsos',
+    STORE: 'stor',
+    STRUCTURE: 'stru',
+    TEAM: 'team',
+    TEMPLATE: 'temp',
+    TRAN: 'trns',
+    USER: 'user',
+};
+exports.TYPE = {
+    SYSTEM: 'system',
+    ORGANIZATION: 'organization',
+    APPLICATION: 'application',
+    FOLDER: 'folder',
+    FILE: 'file',
+    CONTENT: 'content',
+    VERSION: 'version',
+    TEAM: 'team',
+    USER: 'user',
+    COMPONENT: 'component',
+    CONDITION: 'condition',
+    EDITOR: 'editor',
+    FUNCTION: 'function',
+    LIBRARY: 'library',
+    PACKAGE: 'package',
+    PAGE: 'page',
+    PROJECT: 'project',
+    PROJECT_FOLDER: 'project_folder',
+    RESOURCE: 'resource',
+    TEMPLATE: 'template',
+    VARIABLE: 'variable',
+    MOCK: 'mock',
+    GOODS: 'goods',
+    INVOLVE: 'involve',
+};
+exports.LOG = {
+    CREATE: 'create',
+    UPDATE: 'update',
+    DELETE: 'delete',
+    PUBLISH: 'publish',
+    LIVE: 'live',
+    LOGIN: 'login',
+    LOGOUT: 'logout',
+    SET: 'set',
+    VERSION_UPDATE: 'version_update',
+    VERSION_REMOVE: 'version_remove',
+    CONTENT_UPDATE: 'content_update',
+    CONTENT_REMOVE: 'content_remove',
+    CONTENT_TAG: 'content_tag',
+    FILE_UPDATE: 'file_update',
+    FILE_REMOVE: 'file_remove',
+    FILE_TAG: 'file_tag',
+    META_UPDATE: 'meta_update',
+    VERSION_STATUS: 'version_status',
+    REQUEST: 'request',
+    CATEGORY_SYSTEM: 'system',
+    CATEGORY_ORGANIZATION: 'organization',
+    CATEGORY_APPLICATION: 'application',
+};
+exports.VERSION = {
+    STATUS_DISCARD: 'discard',
+    STATUS_BASE: 'base',
+    STATUS_ALPHA: 'alpha',
+    STATUS_BETA: 'beta',
+    STATUS_RELEASE_CANDIDATE: 'release candidate',
+    STATUS_RELEASE: 'release',
+};
+exports.DSL_VERSION = '1.0';
+exports.DELIVERY_CLONE = 'clone';
+exports.DELIVERY_REFERENCE = 'reference';
+exports.TAG = {
+    COMPONENT_CATEGORY: 'componentCategory',
+    CLONE: 'cloneFrom',
+    COPY: 'copyFrom',
+    RESOURCE_GROUP: 'resourceGroup',
+    RESOURCE_CONFIG: 'resourceConfig',
+    DELIVERY_CLONE: 'clone',
+    DELIVERY_REFERENCE: 'reference',
+};
+exports.CONT_STORE = 'store';
+exports.RESPONSE_LEVEL = {
+    SUCCESS: 200,
+    DOWNLOAD: 210,
+    WARNING: 400,
+    ACCESS_DENY: 403,
+    NOT_FOUND: 404,
+    ERROR: 500,
+};
+exports.LOGGER_LEVEL = {
+    DEBUG: 1,
+    INFO: 2,
+    WARN: 3,
+    ERROR: 4,
+    NONE: 5,
+};
+exports.METHOD = {
+    GET: 'get',
+    POST: 'post',
+    PUT: 'put',
+    DELETE: 'delete',
+};

@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "alwaysStrict": true,
+    "strictPropertyInitialization": false,
+    "types": ["node", "reflect-metadata", "jest"],
+    "paths": {},
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*",
+    "config/**/*",
+    "app.ts",
+    "index.ts",
+    "app.config.ts",
+    "install.ts",
+    "scripts/*.ts",
+    "static/**/*",
+    "foxpage.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "jest.config.js", "test/**/*", "src/**/__mocks__/**/*"]
+}

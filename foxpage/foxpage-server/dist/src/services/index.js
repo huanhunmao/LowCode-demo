@@ -1,0 +1,62 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.version = exports.user = exports.team = exports.store = exports.storage = exports.resource = exports.relation = exports.org = exports.log = exports.folder = exports.file = exports.content = exports.component = exports.auth = exports.application = void 0;
+const application_service_1 = require("./application-service");
+const authorization_service_1 = require("./authorization-service");
+const component_service_1 = require("./component-service");
+const content = __importStar(require("./content-services"));
+exports.content = content;
+const file = __importStar(require("./file-services"));
+exports.file = file;
+const folder = __importStar(require("./folder-services"));
+exports.folder = folder;
+const log_service_1 = require("./log-service");
+const organization_service_1 = require("./organization-service");
+const relation_service_1 = require("./relation-service");
+const resource_service_1 = require("./resource-service");
+const storage_service_1 = require("./storage-service");
+const store = __importStar(require("./store-services"));
+exports.store = store;
+const team_service_1 = require("./team-service");
+const user_service_1 = require("./user-service");
+const version = __importStar(require("./version-services"));
+exports.version = version;
+const application = application_service_1.ApplicationService.getInstance();
+exports.application = application;
+const user = user_service_1.UserService.getInstance();
+exports.user = user;
+const org = organization_service_1.OrgService.getInstance();
+exports.org = org;
+const team = team_service_1.TeamService.getInstance();
+exports.team = team;
+const log = log_service_1.LogService.getInstance();
+exports.log = log;
+const relation = relation_service_1.RelationService.getInstance();
+exports.relation = relation;
+const auth = authorization_service_1.AuthService.getInstance();
+exports.auth = auth;
+const component = component_service_1.ComponentService.getInstance();
+exports.component = component;
+const resource = resource_service_1.ResourceService.getInstance();
+exports.resource = resource;
+const storage = storage_service_1.StorageService.getInstance();
+exports.storage = storage;
